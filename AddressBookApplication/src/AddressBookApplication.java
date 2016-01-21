@@ -7,33 +7,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class AddressBookApplication {
-	/**
-	public static class AddressBook {
-		 // Address book entries
-		static List<AddressEntry>ablist = new ArrayList<AddressEntry>();
-		
-		/**
-		public AddressBook()
-		   {
-		      ablist=new ArrayList<AddressEntry>();
-		   } 
-		  
-        //find
-		//add
-		//remove
-		//list
-		//save
-		//load
-     
-		public static void printList(){
-		    for(AddressEntry elem : ablist){
-		        System.out.println(elem.toString());
-		    }
-		} 
-
-		
-		}
-	*/
 	
 	 static void init(String filename) throws IOException {
 		 
@@ -61,9 +34,7 @@ public class AddressBookApplication {
 	             temp.add(new AddressEntry(FirstName));
 	            
 	            
-	            line  = br.readLine();
-	            
-	            
+	            line  = br.readLine();	            
 	        } 
 
 	        for(AddressEntry list : temp){
@@ -73,11 +44,6 @@ public class AddressBookApplication {
 	        br.close();
 	        fr.close();    
 			}
-		    
-		 
-	 
-
-
 	
 	public static void main(String [] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -112,144 +78,5 @@ public class AddressBookApplication {
 		AddressBook.ablist.add(b);
 		AddressBook.printList();
 	}
-	           	
-	   
-	/**
-	public static class AddressEntry{
-		public String FirstName = " ";
-		public String LastName = " ";
-		public String Street = " ";
-		public String City = " ";
-		public String State = " ";
-		public String Zip = " ";
-		public String Telephone = " ";
-		public String Email = " ";
-		public String toString() {
-	        return this.FirstName + ", " + this.LastName + "," + this.Street + "," + this.City + "," + this.State + "," + this.Zip + "," + this.Telephone + "," + this.Email + "\n";
-	    }
-		
-		public AddressEntry(String FirstName,String LastName,String Street,String City,String State,String Zip,String Telephone,String Email) 
-		{
-			this.FirstName = FirstName;
-			this.LastName = LastName;
-			this.Street = Street;
-			this.City = City;
-			this.State = State;
-			this.Zip = Zip;
-			this.Telephone = Telephone;
-			this.Email = Email;
-		}
-		
-		public AddressEntry() 
-		{
-			
-		}
-		
-		public AddressEntry(String FirstName) 
-		{
-			this.FirstName = FirstName;
-		}
-	   
-		public void setFName( String FirstName){
-		       this.FirstName = FirstName;
-		   }
-	
-		   public String getFName( ){
-		       return FirstName;
-		   }  
-		
-		
-		public void setLName( String LastName){
-		       this.LastName = LastName;
-		   }
-	
-		   public String getLastName( ){
-		       return LastName;
-		   }  
-	
-		
-		public void setStreet( String Street){
-		       this.Street = Street;
-		   }
-
-		   
-	   public void setState( String State){
-	       this.State = State;
-	   }
-
-	   public String getState( ){ 
-	       return State;
-	   }  
-	   
-	   public void setZip( String Zip){
-	       this.Zip = Zip;
-	   }
-
-	   public String getZip( ){
-	       return Zip;
-	   }  
-	   
-	   public void setTelephone( String Telephone){
-	       this.Telephone = Telephone;
-	   }
-
-	   public String getTelephone( ){
-	       return Telephone;
-	   }  
-	   
-	   public void setEmail( String Email){
-	       this.Email = Email;
-	   }
-
-	   public String getEmail( ){ 
-	       return Email;
-	   }  
-	}
-	*/
-
-	
-	/**
-	public static  class Menu{
-		   		   
-			public static  String prompt_FirstName() 
-			{
-				
-				return "Enter First Name: ";
-				}
-			public static String prompt_LastName() 
-			{				
-				return "Enter Last Name: ";
-
-				}
-			public static String prompt_Street() 
-			{				
-				return "Street: ";
-
-				}
-			public static String prompt_City() 
-			{				
-				return "City: ";
-				}
-			public static String prompt_State() 
-			{
-				return "State: ";
-				}
-			public static String prompt_Zip() 
-			{
-				return "Zip: ";
-				}
-			
-			public static String prompt_Telephone() 
-			{
-				return "Telephone: ";
-				}
-			public static String prompt_Email() 
-			{
-				return "Email: ";
-				}
-
-		   
-		}*/
-	
 
 }

@@ -1,5 +1,5 @@
 
-public  class Menu{
+public   class Menu{
 		   		   
 			public static  String prompt_FirstName() 
 			{
