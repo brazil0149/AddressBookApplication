@@ -3,7 +3,7 @@
  * Has toString, toFile string methods
  * seters and geters for First Name, Last Name, Street, City, State, Zip, Telephone and Email
  */
-public  class AddressEntry{
+public  class AddressEntry implements Comparable<AddressEntry>{
 	
 		public String FirstName = " ";
 		public String LastName = " ";
@@ -184,5 +184,18 @@ public  class AddressEntry{
 	    */
 	   public String getEmail( ){ 
 	       return Email;
-	   }  
-	}	
+	   }
+	   
+	   /**
+	    * compare Address Entires and print it alphabetically 
+	    */
+	   public  int compareTo(AddressEntry person){
+		    return this.LastName.compareTo(person.getLastName());
+		}
+
+	
+
+	
+
+	}
+		
