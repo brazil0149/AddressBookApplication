@@ -19,7 +19,7 @@ public  class AddressEntry implements Comparable<AddressEntry>{
 		 * @return turns file to string
 		 */
 		public String toString() {
-	        return this.FirstName + ", " + this.LastName + "," + this.Street + "," + this.City + "," + this.State + "," + this.Zip + "," + this.Telephone + "," + this.Email + "\n";
+	        return this.FirstName + "," + this.LastName + "," + this.Street + "," + this.City + "," + this.State + "," + this.Zip + "," + this.Telephone + "," + this.Email + "\n";
 	    }
 		
 		/**
